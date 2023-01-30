@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Utilizo el estilo, para que los tamaños de las divisiones respondan a distintos tamaños de pantalla -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilosP-cv.css" />
+    <title>Curriculum Vitae</title>
+    <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/yupiramos/yupiramos1709/yupiramos170920011/86159733-lupa-con-el-curriculum-vitae-icono-aislado-dise%C3%B1o-de-ilustraci%C3%B3n-vectorial.jpg">
+</head>
+<body>
+  <!-- Barra de Navegacion, en 6 columnas -->
+  <div class="row" >         
+    <div class="col-12">
+      <nav id="barra-navegacion">    
+        <div class="row">
+          <div class="col-2" >
+            <a href="#contacto">Contacto </a></div>
+        <div class="col-2">
+            <a href="#info-personal">Informacion personal</a></div>
+          <div class="col-2">
+            <a href="#formacion">Formacion Academica</a></div>
+          <div class="col-2">
+            <a href="#cursos">Cursos</a></div>
+          <div class="col-2">
+            <a href="#experiencia">Experiencia Laboral</a></div>
+            <div class="col-2">
+              <a href="#otros-datos">Otros Datos</a></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Comienzan los datos del curriculum-->
+   <h1></h1> 
+  <h1 id="nombre" style="text-align: center;"> Nombre: Aylen Eugenia</h1>
+  <h1 id="apellido" style="text-align: center;">Apellido: Romero García</h1>      
+      
+  <!-- Sector donde comienzan las dos columnas -->
+  <div class="container-text-center">                             
+    <div class="row" >         
+      <div class="col-12">           
+        <div class="row" >
+          
+          <!-- Columna de la izquierda -->
+          <div class="col-4" style="background-color: rgb(203, 247, 232); text-align: center;">
+            <picture style="margin:0px auto;">
+              <source media="(min-width:650px)" srcset="https://randomuser.me/api/portraits/women/49.jpg" style="width:auto;">
+              <source media="(min-width:465px)" srcset="https://randomuser.me/api/portraits/med/women/49.jpg" style="width:auto;">
+              <img src="https://randomuser.me/api/portraits/thumb/women/49.jpg" alt="" style="width:auto;">
+            </picture>
+              
+            <h4 id="contacto">CONTACTO</h4>
+            
+            <!-- Cada opcion tiene un icono delante, para mejorar la estetica del curriculum -->
+            <div style="text-align: left;">
+              <ul >
+                <li> <img src="https://png.vector.me/files/images/1/6/160758/phone_icon_clip_art.jpg" alt="" width=5%> <a href="#telefono" > Teléfono: 2920-540303</a></li>
+                <li> <img src="https://png.vector.me/files/images/1/3/139617/mail_icon_clip_art.jpg" alt="" width=5%> <a href="mailto:ayle_2010@yahoo.com.ar?Subject=prueba%20del%20mail%20del%20curriculum"> Mail: ayle_2010@yahoo.com.ar</a></li>
+                <li> <img src="https://cdn-icons-png.flaticon.com/512/2282/2282299.png" alt="" width=5%> <a href="https://www.facebook.com/aylen.garcia.99/about"> Pagina web: </a></li>
+                <li> <img src="https://cdn-icons-png.flaticon.com/512/3391/3391061.png" alt="" width=5%> <a href="https://www.facebook.com/aylen.garcia.99/about"> Redes sociales: Facebook</a></li>
+               </ul>
+              </div>
+              <h4 id="contacto">IDIOMAS</h4>
+              
+              <!-- Utilizo barras de progreso, para indicar el nivel de conocimiento de cada idioma-->
+              <div class="container">
+                <div class="progress">
+                  <p>  Español  </p>
+                  <div class="progress-bar" role="progressbar" style="width:100%">  
+                  </div>                
+                </div>    
+                <div class="progress">
+                  <p>  Ingles  </p>
+                  <div class="progress-bar" role="progressbar" style="width:50%">
+                  </div>                  
+                </div>
+                <div class="progress">
+                    <p>  Italiano  </p>
+                  <div class="progress-bar" role="progressbar" style="width:30%">  
+                  </div>
+                </div>            
+              </div>               
+            </div>
+          
+            <!-- La siguiente es la seccion de la derecha-->  
+            <div class="col-8" id="info-personal" >            
+              <div style="border: 2px ; border-style: solid; border-color: darkblue;">
+                <!--Boton + o - para ocultar o mostrar la informacion personal-->
+                <div class="row">
+                  <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="-" width=10% id="ocultar-datos-personales"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="+" width=10% id="mostrar-datos-personales"> 
+                  </div>
+                  <div class="col-8">
+                    <h3>Informacion Personal</h3> 
+                  </div>            
+                </div>   
+                <!-- primera parte de los datos personales-->
+                <div id="datos-personales" > 
+                  <ul>
+                    <li><h5>Documento de Identidad: 41.861.650</h5></li>
+                    <li><h5>Genero: Femenino</h5></li>
+                    <li> <h5>Lugar de nacimiento: Argentina</h5></li>
+                    <li><h5>Fecha de nacimiento: 16 de abril de 1999</h5></li>
+                  </ul> 
+                </div>
+              </div>
+              <!-- segunda parte de los datos personales-->
+              <div style="border: 2px ; border-style: solid; border-color: darkblue;">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="" width=10% id="menos-residencia"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="" width=10% id="mas-residencia"> 
+                  </div>
+                  <div class="col-8">
+                    <h3>Residencia Actual</h3> 
+                  </div>            
+                </div>   
+                <ul id="datos-residencia">
+                  <div class="row" >              
+                    <div class="col-4">
+                      <h5>Direccion:</h5> </div>
+                    <div class="col-8">
+                      <h5>Perú 329</h5></div>
+                  </div>
+                  <h5>Ciudad:</h5> <p>Bahia Blanca</p>
+                  <h5>Provincia:</h5> <p>Buenos Aires</p>
+                  <div class="row">
+                    <div class="col-6">
+                      <h5>Pais:</h5> <p>Argentina</p></div>
+                    <div class="col-6">
+                      <h5> Codigo Postal:</h5> <p>8000</p></div>
+                  </div>
+                </ul>                  
+              </div> <!-- Cierre de la segunda parte de los datos personales-->
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Datos del sector que sigue a las dos columnas-->
+    <div class="col-12" >
+      <div class="row">
+        <div class="col-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="" width=30% id="menos-formacion"> 
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="" width=30% id="mas-formacion"> 
+        </div>
+        <div class="col-11">
+          <h3 id="formacion" >Formación Academica</h3> 
+        </div>            
+      </div>
+        <ul id="datos-formacion">
+          <p>Secundario: Bachiller con capacitación laboral en auxiliar en Lab. con esp. en Cs. naturales</p> 
+          <p>Actualmente estoy cursando mi segundo año en la carrera de Bioquímica en la UNS</p> 
+        </ul>
+        
+        <div class="row">
+          <div class="col-1">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="" width=30% id="menos-cursos"> 
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="" width=30% id="mas-cursos"> 
+          </div>
+          <div class="col-11">
+            <h3 id="cursos" >Cursos</h3> 
+          </div>            
+        </div>     
+          <ul id="datos-cursos">
+            <p>“Fotografía-Nivel I” Universidad Nacional del Sur (2017)</p>	 
+            <p>“Lengua de Señas Argentinas” Universidad Nacional del Sur (2018)</p>	        
+          </ul>
+      
+          <div class="row">
+            <div class="col-1">
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="" width=30% id="menos-experiencia"> 
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="" width=30% id="mas-experiencia"> 
+            </div>
+            <div class="col-11">
+              <h3 id="experiencia">Experiencia Laboral </h3> 
+            </div>            
+          </div>             
+          <ul id="datos-experiencia">
+            <h4>Pollería La Sofía (atención al público, control de stock y caja) </h4>
+            <ul>
+              <p>Durante 5 meses</p> 	 
+              <p>Referencias: Antonio Gilberto Machiavello. Teléfono 291-6457750</p> 
+            </ul>
+            <h4>Cuidado de niños (un bebe y dos niños de 5 años)</h4>     
+            <ul>
+              <p>Durante 4 meses</p>
+              <p>Referencias: M.Gabriela Urweider. Teléfono 291-4423034</p>  
+            </ul>        
+          </ul>
+          <div class="row">
+            <div class="col-1">
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" alt="" width=30% id="menos-otros"> 
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="" width=30% id="mas-otros"> 
+            </div>
+            <div class="col-11">
+              <h3 id="otros-datos">Otros datos</h3> 
+            </div>            
+          </div>         
+          <ul id="datos-otros">
+            <p>Manejo de Word, Excel, Power Point, Internet y Aplicaciones varias</p>  
+            <p>Licencia de Conducir A1.1, B1</p>  
+            <p> Disponibilidad horaria, full time o part time </p>
+          </ul>
+      </div> <!-- Finalizacion del ultimo sector de datos -->
+
+
+    <script src="js/scriptP-cv.js"></script>;
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+         /* obtengo un objeto de randomuser*/
+         fetch('https://randomuser.me/api/')
+            .then((response) => response.json())
+            .then((json) => console.log(json.results[0]))            
+         </script>
+  <div id="footer">
+    <p>Este currículum está realizado con datos ficticios, como practica del curso Front-End Academy 2022</p> 
+    <a href="#barra-navegacion">Volver al principio </a></div>
+  </div>
+</body>
+</html>
