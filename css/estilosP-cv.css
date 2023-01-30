@@ -18,6 +18,7 @@
     width: 100%;
   }
 }
+/** inicia los botones para mostrar mai informacion, como ocultos **/
 #mostrar-datos-personales , #mas-residencia , #mas-formacion, #mas-cursos, #mas-experiencia, #mas-otros{
   display: none;
 }

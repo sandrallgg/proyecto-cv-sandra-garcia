@@ -7,8 +7,12 @@
 
    <!-- Utilizo el estilo, para que los tamaños de las divisiones respondan a distintos tamaños de pantalla -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- link con mi archivo de estilos-->
     <link rel="stylesheet" type="text/css" href="css/estilosP-cv.css" />
     <title>Curriculum Vitae</title>
+    
+    <!-- icono para mi página web-->
     <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/yupiramos/yupiramos1709/yupiramos170920011/86159733-lupa-con-el-curriculum-vitae-icono-aislado-dise%C3%B1o-de-ilustraci%C3%B3n-vectorial.jpg">
 </head>
 <body>
@@ -46,6 +50,7 @@
           
           <!-- Columna de la izquierda -->
           <div class="col-4" style="background-color: rgb(203, 247, 232); text-align: center;">
+            <!-- foto de perfil con distintos tamaños, para responder al cambio de tamaño de la pantalla-->
             <picture style="margin:0px auto;">
               <source media="(min-width:650px)" srcset="https://randomuser.me/api/portraits/women/49.jpg" style="width:auto;">
               <source media="(min-width:465px)" srcset="https://randomuser.me/api/portraits/med/women/49.jpg" style="width:auto;">
@@ -63,6 +68,7 @@
                 <li> <img src="https://cdn-icons-png.flaticon.com/512/3391/3391061.png" alt="" width=5%> <a href="https://www.facebook.com/aylen.garcia.99/about"> Redes sociales: Facebook</a></li>
                </ul>
               </div>
+              
               <h4 id="contacto">IDIOMAS</h4>
               
               <!-- Utilizo barras de progreso, para indicar el nivel de conocimiento de cada idioma-->
@@ -208,19 +214,31 @@
             <p> Disponibilidad horaria, full time o part time </p>
           </ul>
       </div> <!-- Finalizacion del ultimo sector de datos -->
-
-
-    <script src="js/scriptP-cv.js"></script>;
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-         /* obtengo un objeto de randomuser*/
-         fetch('https://randomuser.me/api/')
-            .then((response) => response.json())
-            .then((json) => console.log(json.results[0]))            
-         </script>
+<!--Ultimo sector, de pie de página-->
   <div id="footer">
     <p>Este currículum está realizado con datos ficticios, como practica del curso Front-End Academy 2022</p> 
     <a href="#barra-navegacion">Volver al principio </a></div>
   </div>
+
+  <!-- Mi archivo de java script-->  
+  <script src="js/scriptP-cv.js"></script>;
+  
+  <!-- script de bootstrap--> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>;
+
+
+  <!-- Obtener datos de una persona de un sitio externo -->
+  <!-- lo dejo pendiente para nuevas modificaciones, ya que no pude usar el objeto JSON que obtengo, solo lo pude ver en consola-->
+  <!--
+    <script
+                 /* obtengo un objeto de randomuser y lo convierto a texto para poder obtener*/
+         fetch('https://randomuser.me/api/')
+            .then((response) => response.json())
+            .then((json) => obj=JSON.stringify(json) );
+          console.log(obj)   /** no me muestra nada aun, pendiente de revision **/         
+    </script>
+  -->
+  
 </body>
 </html>
